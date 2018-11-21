@@ -20,7 +20,7 @@ before_install:
 - composer self-update
 
 install:
-- composer install
+- COMPOSER_MEMORY_LIMIT=-1 composer install
 - ./bin/phpunit install
 
 script:
