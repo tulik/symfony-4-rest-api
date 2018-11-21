@@ -1,0 +1,7 @@
+App\Entity\Book:
+  book_{1..100}:
+    isbn (unique): <isbn13()>
+    title: <sentence(3, 5)>
+    description: <paragraph(3, 5)>
+    author: <firstName()> <lastName()>
+    publicationDate: <dateTimeBetween('-100 years', 'now')>

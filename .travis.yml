@@ -1,0 +1,38 @@
+language: php
+sudo: false
+
+cache:
+  directories:
+  - $HOME/.composer/cache/files
+  - ./bin/.phpunit
+
+env:
+  global:
+  - SYMFONY_PHPUNIT_DIR=./bin/.phpunit
+
+matrix:
+  fast_finish: true
+  include:
+  - php: 7.2
+
+before_install:
+- '[[ "$TRAVIS_PHP_VERSION" == "7.2" ]] || phpenv config-rm xdebug.ini'
+- composer self-update
+
+install:
+- COMPOSER_MEMORY_LIMIT=-1 composer install
+- ./bin/phpunit install
+
+script:
+- ./bin/phpunit
+# this checks that the source code follows the Symfony Code Syntax rules
+- '[[ "$TRAVIS_PHP_VERSION" == "7.2" ]] || ./vendor/bin/php-cs-fixer fix --dry-run -v phpcs.xml.dist'
+- ./bin/console lint:yaml config
+# this checks that the application doesn't use dependencies with known security vulnerabilities
+- ./bin/console security:check
+# this checks that the composer.json and composer.lock files are valid
+- composer validate
+# this checks that Doctrine's mapping configurations are valid
+- ./bin/console doctrine:schema:validate --skip-sync -vvv --no-interaction
+- '[[ "$TRAVIS_PHP_VERSION" == "7.2" ]] || ./vendor/bin/phpmd src/ text phpmd.dist.xml'
+- '[[ "$TRAVIS_PHP_VERSION" == "7.2" ]] || ./vendor/bin/phpstan analyse src'

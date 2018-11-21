@@ -1,0 +1,7 @@
+App\Entity\Movie:
+  movie_{1..100}:
+    duration: <numberBetween(3600, 7200)>
+    title: <sentence(3, 5)>
+    description: <paragraph(3, 5)>
+    director: <firstName()> <lastName()>
+    publicationDate: <dateTimeBetween('-100 years', 'now')>
