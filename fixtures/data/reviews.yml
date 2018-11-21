@@ -1,0 +1,8 @@
+App\Entity\Review:
+  review_{1..1000}:
+    body: <paragraph(3, 8)>
+    rating: <numberBetween(1, 10)>
+    author: '@user*'
+    publicationDate: <dateTimeBetween('-1 year', 'now')>
+    book: '@book*'
+    movie: '@movie*'

@@ -1,0 +1,21 @@
+nelmio_api_doc:
+    documentation:
+        models: { use_jms: false }
+        routes:
+            path_patterns:
+            - ^/(?!/$)
+        schemes: [http, https]
+        info:
+            title: Symfony Rest API Demo
+            version: beta
+        securityDefinitions:
+            Bearer:
+                type: apiKey
+                description: 'Value: Bearer {jwt}'
+                name: Authorization
+                in: header
+        security:
+        - Bearer: []
+    areas: # to filter documented areas
+        path_patterns:
+            - ^/(?!/$)

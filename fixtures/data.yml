@@ -1,0 +1,5 @@
+include:
+  - data/books.yml
+  - data/movies.yml
+  - data/reviews.yml
+  - data/users.yml
