@@ -1,10 +1,9 @@
-<center>
+<p align="center">
 
 [![SymfonyInsight](https://insight.symfony.com/projects/48af693f-97d3-4f11-a697-3e6ec9ff7e3c/big.svg)](https://insight.symfony.com/projects/48af693f-97d3-4f11-a697-3e6ec9ff7e3c)
 
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/tulik/symfony-4-rest-api/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/tulik/symfony-4-rest-api/?branch=master) [![Code Coverage](https://scrutinizer-ci.com/g/tulik/symfony-4-rest-api/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/tulik/symfony-4-rest-api/?branch=master) [![Build Status](https://travis-ci.org/tulik/symfony-4-rest-api.svg?branch=master)](https://travis-ci.org/tulik/symfony-4-rest-api)
-</center>
-
+</p>
 
 **Symfony 4 Rest API** is a demo application written **without** FOSUserBundle and FOSRestBundle.
 
