@@ -213,8 +213,12 @@ class ReviewController extends AbstractController implements ControllerInterface
             return $this->createNotFoundResponse();
         }
 
-        $this->entityManager->remove($review);
-        $this->entityManager->flush();
+        try {
+            $this->entityManager->remove($review);
+            $this->entityManager->flush();
+        } catch (\Exception $exception) {
+            return $this->createGenericErrorResponse($exception);
+        }
 
         return $this->createSuccessfulApiResponse(self::DELETED);
     }

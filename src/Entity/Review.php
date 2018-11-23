@@ -55,6 +55,7 @@ class Review
      * @ORM\ManyToOne(targetEntity="App\Entity\User", inversedBy="reviews", cascade={"persist", "remove"})
      *
      * @JMS\Expose
+     * @JMS\Groups("author")
      */
     protected $author;
 
