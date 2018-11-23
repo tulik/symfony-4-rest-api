@@ -52,7 +52,7 @@ class UserProvider implements UserProviderInterface
     /**
      * {@inheritdoc}
      */
-    public function refreshUser(UserInterface $user): UserInterface
+    public function refreshUser(UserInterface $user): ?UserInterface
     {
         /** @var User $user */
         if (!$this->supportsClass(\get_class($user))) {
@@ -63,8 +63,11 @@ class UserProvider implements UserProviderInterface
             throw new UsernameNotFoundException(sprintf('User with ID "%s" could not be reloaded.', $user->getId()));
         }
 
-        // @var UserInterface $reloadedUser
-        return $reloadedUser;
+        if ($reloadedUser instanceof UserInterface) {
+            return $reloadedUser;
+        }
+
+        return null;
     }
 
     /**
