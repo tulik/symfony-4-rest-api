@@ -21,7 +21,7 @@
 
 <h4 align="center">
 Written <strong>WITHOUT</strong> <em>FOSUserBundle</em> and <em>FOSRestBundle</em> <br><br>
-<strong> 2000 lines</strong> under your controll
+<strong> 2000 lines</strong> under your control.
 
 <hr>
 <br/>
