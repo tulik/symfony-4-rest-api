@@ -28,10 +28,9 @@ If you need method `elasticSearchPagination()` you can build according to [Pager
 }
 ```
 
-This method allows you to forget about handling `LexikFormFilter` and simplify `listAction` in your controllers.  
+This method allows you to forget about handling `LexikFormFilter` and simplify listing your data with filters controllers.  
 
 ```php
-
 <?php
 # src/Controller/AbstractController.php
     
@@ -61,6 +60,6 @@ This method allows you to forget about handling `LexikFormFilter` and simplify `
 
 Controllers follow implements `list`, `show`, `create`, `update` and `delete` actions.
 
-I implemented **GET**, **POST**, **PATCH** and **DELETE** request methods. I haven't included PUT in favor of PATCH 
+I implemented **GET**, **POST**, **PATCH** and **DELETE** request methods. I haven't included **PUT** in favor of **PATCH**. 
 
-It depends on you what methods do you want to implement and what additional endpoint you need to create.
+It's up to you what methods do you want to implement and what additional endpoint you need to create.
