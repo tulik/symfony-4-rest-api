@@ -74,7 +74,8 @@ class Review
      *
      * @ORM\ManyToOne(targetEntity="App\Entity\Book", inversedBy="reviews", cascade={"persist"})
      *
-     * @JMS\Groups({"books"})
+     * @JMS\Expose
+     * @JMS\Groups("books")
      */
     protected $book;
 
@@ -83,7 +84,8 @@ class Review
      *
      * @ORM\ManyToOne(targetEntity="App\Entity\Movie", inversedBy="reviews", cascade={"persist"})
      *
-     * @JMS\Groups({"movies"})
+     * @JMS\Expose
+     * @JMS\Groups("movies")
      */
     protected $movie;
 
