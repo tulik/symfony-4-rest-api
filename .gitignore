@@ -1,11 +1,10 @@
 
 ###> symfony/framework-bundle ###
 /.env
-/.web-server-pid
+/.php_cs.cache/
 /public/bundles/
 /var/
 /vendor/
-public/phpmetrics
 composer.lock
 symfony.lock
 ###< symfony/framework-bundle ###

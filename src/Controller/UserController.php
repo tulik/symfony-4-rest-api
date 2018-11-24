@@ -113,8 +113,6 @@ class UserController extends AbstractController implements ControllerInterface
      * @param Request $request
      * @param User|null $user
      *
-     * @throws \App\Exception\FormInvalidException
-     *
      * @return JsonResponse
      */
     public function createAction(Request $request, User $user = null): JsonResponse
@@ -212,8 +210,12 @@ class UserController extends AbstractController implements ControllerInterface
             return $this->createNotFoundResponse();
         }
 
-        $this->entityManager->remove($user);
-        $this->entityManager->flush();
+        try {
+            $this->entityManager->remove($user);
+            $this->entityManager->flush();
+        } catch (\Exception $exception) {
+            return $this->createGenericErrorResponse($exception);
+        }
 
         return $this->createSuccessfulApiResponse(self::DELETED);
     }

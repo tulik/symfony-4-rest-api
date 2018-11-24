@@ -212,8 +212,12 @@ class MovieController extends AbstractController implements ControllerInterface
             return $this->createNotFoundResponse();
         }
 
-        $this->entityManager->remove($movie);
-        $this->entityManager->flush();
+        try {
+            $this->entityManager->remove($movie);
+            $this->entityManager->flush();
+        } catch (\Exception $exception) {
+            return $this->createGenericErrorResponse($exception);
+        }
 
         return $this->createSuccessfulApiResponse(self::DELETED);
     }
