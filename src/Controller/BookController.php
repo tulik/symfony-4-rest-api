@@ -211,8 +211,12 @@ class BookController extends AbstractController implements ControllerInterface
             return $this->createNotFoundResponse();
         }
 
-        $this->entityManager->remove($book);
-        $this->entityManager->flush();
+        try {
+            $this->entityManager->remove($book);
+            $this->entityManager->flush();
+        } catch (\Exception $exception) {
+            return $this->createGenericErrorResponse($exception);
+        }
 
         return $this->createSuccessfulApiResponse(self::DELETED);
     }

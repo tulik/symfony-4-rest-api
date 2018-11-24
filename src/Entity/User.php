@@ -34,6 +34,7 @@ class User extends AbstractUser implements UserInterface
      *
      * @ORM\ManyToMany(targetEntity="App\Entity\Book", inversedBy="readers", cascade={"persist"})
      *
+     * @JMS\Expose
      * @JMS\Groups("books")
      */
     protected $books;
@@ -53,6 +54,7 @@ class User extends AbstractUser implements UserInterface
      *
      * @ORM\OneToMany(targetEntity="App\Entity\Review", mappedBy="author", cascade={"persist"})
      *
+     * @JMS\Expose
      * @JMS\Groups("reviews")
      */
     protected $reviews;
