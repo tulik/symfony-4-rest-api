@@ -50,9 +50,11 @@ interface ControllerInterface
     public function createNotFoundResponse(): JsonResponse;
 
     /**
+     * @param \Exception $exception
+     *
      * @return JsonResponse
      */
-    public function createGenericErrorResponse(): JsonResponse;
+    public function createGenericErrorResponse(\Exception $exception): JsonResponse;
 
     /**
      * @param Request $request

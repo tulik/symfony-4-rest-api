@@ -36,7 +36,7 @@ See demo: <a href="http://rest-api.tulik.io">http://rest-api.tulik.io</a>
 **Clone repository**
 
 ```
-git clone https://github.com/tulik/symfony-4-rest-api.git
+git clone git@github.com:tulik/symfony-4-rest-api.git
 ```
 
 **Install dependencies**

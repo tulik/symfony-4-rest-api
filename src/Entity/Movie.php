@@ -87,7 +87,8 @@ class Movie
      *
      * @ORM\OneToMany(targetEntity="App\Entity\Review", mappedBy="movie")
      *
-     * @JMS\Groups({"reviews"})
+     * @JMS\Expose
+     * @JMS\Groups("reviews")
      */
     protected $reviews;
 
@@ -96,7 +97,8 @@ class Movie
      *
      * @ORM\ManyToMany(targetEntity="App\Entity\User", mappedBy="movies")
      *
-     * @JMS\Groups({"audience"})
+     * @JMS\Expose
+     * @JMS\Groups("audience")
      */
     protected $audience;
 

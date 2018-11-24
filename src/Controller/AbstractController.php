@@ -137,11 +137,15 @@ abstract class AbstractController extends Controller
     }
 
     /**
+     * @param \Exception $exception
+     *
      * @return JsonResponse
      */
-    public function createGenericErrorResponse(): JsonResponse
+    public function createGenericErrorResponse(\Exception $exception): JsonResponse
     {
-        $this->responseCreator->setData(self::GENERAL_ERROR);
+        $this->responseCreator->setData(
+            array_merge(self::GENERAL_ERROR, ['details' => $exception->getMessage()])
+        );
 
         return $this->responseCreator->getResponse(
             Response::HTTP_INTERNAL_SERVER_ERROR,
@@ -161,8 +165,11 @@ abstract class AbstractController extends Controller
         $adapter = new DoctrineORMAdapter($query);
         $paginator = new Pagerfanta($adapter);
 
+        $limit = $request->attributes->get('limit');
+        $limit = (1 <= $limit) && ($limit <= 100) ?: 10;
+
         //  Set pages based on the request parameters.
-        $paginator->setMaxPerPage($request->query->get('limit', 10));
+        $paginator->setMaxPerPage($request->query->get('limit', $limit));
         $paginator->setCurrentPage($request->query->get('page', 1));
 
         return $paginator;

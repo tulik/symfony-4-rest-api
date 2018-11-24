@@ -92,7 +92,8 @@ class Book
      *
      * @ORM\OneToMany(targetEntity="App\Entity\Review", mappedBy="book", cascade={"all"})
      *
-     * @JMS\Groups({"reviews"})
+     * @JMS\Expose
+     * @JMS\Groups("reviews")
      */
     protected $reviews;
 
@@ -101,7 +102,8 @@ class Book
      *
      * @ORM\ManyToMany(targetEntity="App\Entity\User", mappedBy="books", cascade={"all"})
      *
-     * @JMS\Groups({"readers"})
+     * @JMS\Expose
+     * @JMS\Groups("readers")
      */
     protected $readers;
 
