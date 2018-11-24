@@ -4,7 +4,7 @@
 </a>
 <br/>
 <br/>
-<a href="https://travis-ci.org/tulik/symfony-4-rest-api.svg?branch=master">
+<a href="https://travis-ci.org/tulik/symfony-4-rest-api">
     <img src="https://travis-ci.org/tulik/symfony-4-rest-api.svg?branch=master"/>
 
 <a href="https://scrutinizer-ci.com/g/tulik/symfony-4-rest-api/?branch=master">
