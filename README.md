@@ -1,18 +1,18 @@
 <p align="center">
 <a href="https://insight.symfony.com/projects/48af693f-97d3-4f11-a697-3e6ec9ff7e3c">
-	<img src="https://insight.symfony.com/projects/48af693f-97d3-4f11-a697-3e6ec9ff7e3c/big.svg"/>
+    <img src="https://insight.symfony.com/projects/48af693f-97d3-4f11-a697-3e6ec9ff7e3c/big.svg"/>
 </a>
 <br/>
 <br/>
 <a href="https://travis-ci.org/tulik/symfony-4-rest-api.svg?branch=master">
-	<img src="https://travis-ci.org/tulik/symfony-4-rest-api.svg?branch=master"/>
+    <img src="https://travis-ci.org/tulik/symfony-4-rest-api.svg?branch=master"/>
 
 <a href="https://scrutinizer-ci.com/g/tulik/symfony-4-rest-api/?branch=master">
-	<img src="https://scrutinizer-ci.com/g/tulik/symfony-4-rest-api/badges/coverage.png?b=master"/>
+    <img src="https://scrutinizer-ci.com/g/tulik/symfony-4-rest-api/badges/coverage.png?b=master"/>
 </a>
 
 <a href="https://scrutinizer-ci.com/g/tulik/symfony-4-rest-api/?branch=master">
-	<img src="https://scrutinizer-ci.com/g/tulik/symfony-4-rest-api/badges/quality-score.png?b=master"/>
+    <img src="https://scrutinizer-ci.com/g/tulik/symfony-4-rest-api/badges/quality-score.png?b=master"/>
 </a>
 
 </p>
@@ -52,10 +52,10 @@ bin/console server:start
 ```
 
 ## Listing with filters and pagination
-It is possible filtering listed data using **LexikFormFilterBundle** and to paginate results using **whiteoctober/Pagerfanta**
+It is possible filtering data using **LexikFormFilterBundle** and to paginate results using **whiteoctober/Pagerfanta**
 
 ## Flexibility
-The whole API including contains **only ~2000 lines of code**, gives you full control possibility easily adapt it with an existing project.
+The whole API including contains **only ~2000 lines of code**, gives you full control possibility to adapt it to an existing project with ease.
 
 ## Extensibility
  Extending its functionality of additional **ElasticSearch**, **Redis** or **RabbitMQ** solution is straightforward. In case you need to change something it's always under your 
