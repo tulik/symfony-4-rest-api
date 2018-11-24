@@ -6,7 +6,7 @@
 ## Voters
 Symfony voters are the most granular and flexible way of checking permissions to perform an action by User.
 
-Check out []How to Use Voters to Check User Permissions](https://symfony.com/doc/current/security/voters.html) to get more familiar with Voters.
+Check out []How to Use Voters to [Check User Permissions](https://symfony.com/doc/current/security/voters.html) to get more familiar with Voters.
 
 In Controllers, they check for permissions to perform a specific action.
 
