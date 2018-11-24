@@ -17,17 +17,18 @@
 
 </p>
 
-<p align="center"> 
-<font size="6"><strong>Symfony 4 REST API</strong></font>
-</p>
+#Symfony 4 REST API
 
-<p align="center">  
-<font size="5">Demo of RESTfull application written <br/><strong>without</strong><br/> <i>FOSUserBundle</i> and <i>FOSRestBundle</i>.</font>
-</p>
+<h4 align="center">
+Written <strong>WITHOUT</strong> <em>FOSUserBundle</em> and <em>FOSRestBundle</em> <br><br>
+<strong> 2000 lines</strong> under your controll
 
-**Requirements:** PHP min. version 7.2.0
-
-**See demo:** [http://rest-api.tulik.io](http://rest-api.tulik.io)
+<hr>
+<br/>
+Requirements: PHP min. version 7.2.0
+<br/>
+See demo: <a href="http://rest-api.tulik.io">http://rest-api.tulik.io</a>
+</h4>
 
 ## Quick start
 
@@ -58,9 +59,9 @@ The whole API including contains **only ~2000 lines of code**, gives you full co
 ## Extensibility
  Extending its functionality of additional **ElasticSearch**, **Redis** or **RabbitMQ** solution is straightforward. In case you need to change something it's always under your 
 
-<p align="center">
-<abbr><font size="5"><strong><a href="EXAMPLES.md">See examples of usage</a></strong></font>
-</p>
+<h3 align="center">
+<a href="EXAMPLES.md">See examples of usage</a>
+</h3>
 
 <strong>
 </p>
