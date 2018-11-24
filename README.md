@@ -17,7 +17,8 @@
 
 </p>
 
-**Symfony 4 Rest API** is a demo application written **without** FOSUserBundle and FOSRestBundle.
+#Symfony 4 Rest API
+## Demo application written **without** FOSUserBundle and FOSRestBundle.
 
 <p style="font-size: 1.5em" align="center"><strong>See demo: </strong> <a href="http://rest-api.tulik.io">http://rest-api.tulik.io</a></p>
 
