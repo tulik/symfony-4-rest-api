@@ -1,15 +1,28 @@
 <p align="center">
+<a href="https://insight.symfony.com/projects/48af693f-97d3-4f11-a697-3e6ec9ff7e3c">
+	<img src="https://insight.symfony.com/projects/48af693f-97d3-4f11-a697-3e6ec9ff7e3c/big.svg"/>
+</a>
+<br/>
+<br/>
+<a href="https://travis-ci.org/tulik/symfony-4-rest-api.svg?branch=master">
+	<img src="https://travis-ci.org/tulik/symfony-4-rest-api.svg?branch=master"/>
 
-[![SymfonyInsight](https://insight.symfony.com/projects/48af693f-97d3-4f11-a697-3e6ec9ff7e3c/big.svg)](https://insight.symfony.com/projects/48af693f-97d3-4f11-a697-3e6ec9ff7e3c)
+<a href="https://scrutinizer-ci.com/g/tulik/symfony-4-rest-api/?branch=master">
+	<img src="https://scrutinizer-ci.com/g/tulik/symfony-4-rest-api/badges/coverage.png?b=master"/>
+</a>
 
-[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/tulik/symfony-4-rest-api/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/tulik/symfony-4-rest-api/?branch=master) [![Code Coverage](https://scrutinizer-ci.com/g/tulik/symfony-4-rest-api/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/tulik/symfony-4-rest-api/?branch=master) [![Build Status](https://travis-ci.org/tulik/symfony-4-rest-api.svg?branch=master)](https://travis-ci.org/tulik/symfony-4-rest-api)
+<a href="https://scrutinizer-ci.com/g/tulik/symfony-4-rest-api/?branch=master">
+	<img src="https://scrutinizer-ci.com/g/tulik/symfony-4-rest-api/badges/quality-score.png?b=master"/>
+</a>
+
 </p>
 
 **Symfony 4 Rest API** is a demo application written **without** FOSUserBundle and FOSRestBundle.
 
-**See demo:** [http://rest-api.tulik.io](http://rest-api.tulik.io)
+<p style="font-size: 1.5em" align="center"><strong>See demo: </strong> <a href="http://rest-api.tulik.io">http://rest-api.tulik.io</a></p>
 
-Requirements: PHP min. version 7.2.0
+
+**Requirements:** PHP min. version 7.2.0
 
 ## Quick start
 
@@ -31,8 +44,6 @@ composer install
 bin/console server:start
 ```
 
-### [See examples of usage](EXAMPLES.md)
-
 ## Listing with filters and pagination
 It is possible filtering listed data using **LexikFormFilterBundle** and to paginate results using **whiteoctober/Pagerfanta**
 
@@ -42,6 +53,9 @@ The whole API including contains **only ~2000 lines of code**, gives you full co
 ## Extensibility
  Extending its functionality of additional **ElasticSearch**, **Redis** or **RabbitMQ** solution is straightforward. In case you need to change something it's always under your 
 
+<p align="center">
+<strong><a style="font-size: 1.5em" href="EXAMPLES.md">See examples of usage</a></strong>
+</p>
 
 # Documentation of implementation
 1. [Controllers](tree/master/src/Controller)
@@ -52,5 +66,3 @@ The whole API including contains **only ~2000 lines of code**, gives you full co
 6. [Security](tree/master/src/Security)
 7. [Service](tree/master/src/Service)
 8. [Traits](tree/master/src/Traits)
-
-
