@@ -10,4 +10,5 @@
 
 ## Manager
 
-`UserManager` is a simple service allowing to manage users. It also provide `UserProvider` with necessary methods.   
+`UserManager` is a simple service allowing to manage users. It also provide `UserProvider` with necessary methods.
+   
