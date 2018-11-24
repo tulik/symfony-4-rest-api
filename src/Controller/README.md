@@ -9,7 +9,6 @@ You can also implement `createMongoPaginagor(Request $request, Query $query)` us
 If you need method `elasticSearchPagination()` you can build according to [Pagerfanta Documentation]((https://github.com/whiteoctober/Pagerfanta#elasticaadapter))
 
 ```php
-
 <?php
 # src/Controller/AbstractController.php
     
