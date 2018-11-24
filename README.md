@@ -18,11 +18,11 @@
 </p>
 
 <p align="center"> 
-<abbr style="font-size: 3em;"> Symfony 4 REST API</abbr>
+<font size="6"><strong>Symfony 4 REST API</strong></font>
 </p>
 
 <p align="center">  
-<abbr style="font-size: 1.5em;">Demo of RESTfull application written <br/><strong>without</strong><br/> <i>FOSUserBundle</i> and <i>FOSRestBundle</i>. </abbr>
+<font size="5">Demo of RESTfull application written <br/><strong>without</strong><br/> <i>FOSUserBundle</i> and <i>FOSRestBundle</i>.</font>
 </p>
 
 **Requirements:** PHP min. version 7.2.0
@@ -59,7 +59,7 @@ The whole API including contains **only ~2000 lines of code**, gives you full co
  Extending its functionality of additional **ElasticSearch**, **Redis** or **RabbitMQ** solution is straightforward. In case you need to change something it's always under your 
 
 <p align="center">
-<abbr><strong><a style="font-size: 2em;" href="EXAMPLES.md">See examples of usage</a></strong></abbr>
+<abbr><font size="5"><strong><a href="EXAMPLES.md">See examples of usage</a></strong></font>
 </p>
 
 <strong>
