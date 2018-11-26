@@ -19,6 +19,8 @@
 
 # Symfony 4 REST API
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/300ea7dfaa7b46f7a51028114391989f)](https://app.codacy.com/app/tulik/symfony-4-rest-api?utm_source=github.com&utm_medium=referral&utm_content=tulik/symfony-4-rest-api&utm_campaign=Badge_Grade_Dashboard)
+
 <h4 align="center">
 Written <strong>WITHOUT</strong> <em>FOSUserBundle</em> and <em>FOSRestBundle</em> <br><br>
 <strong> 2000 lines</strong> under your control.
