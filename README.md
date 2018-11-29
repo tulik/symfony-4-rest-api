@@ -17,8 +17,8 @@
 
 </p>
 
-# Symfony 4 REST API
-
+# Symfony 4 REST API 
+## (Notice: Be aware this solution needs refactorization! Please don't copy this solution 1:1)
 <h4 align="center">
 Written <strong>WITHOUT</strong> <em>FOSUserBundle</em> and <em>FOSRestBundle</em> <br><br>
 <strong> 2000 lines</strong> under your control.
