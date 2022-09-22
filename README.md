@@ -1,9 +1,4 @@
 <p align="center">
-<a href="https://insight.symfony.com/projects/48af693f-97d3-4f11-a697-3e6ec9ff7e3c">
-    <img src="https://insight.symfony.com/projects/48af693f-97d3-4f11-a697-3e6ec9ff7e3c/big.svg"/>
-</a>
-<br/>
-<br/>
 <a href="https://travis-ci.org/tulik/symfony-4-rest-api">
     <img src="https://travis-ci.org/tulik/symfony-4-rest-api.svg?branch=master"/>
 
